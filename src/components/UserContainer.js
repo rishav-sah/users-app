@@ -18,7 +18,7 @@ const UserContainer = () => {
       {!users.loading && users.error ? <div>Error Component</div> : null}
       {
         !users.loading && users.filteredUsers.length ? (
-          <div className="p-5 grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center bg-slate-200">
+          <div className="p-5 grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center bg-slate-200">
             {users.filteredUsers.map((users) => (
               <Link key={users?.login?.uuid} to={`users/${users?.login?.uuid}`}>
                 <UserComponent users={users} />
