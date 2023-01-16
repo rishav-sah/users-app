@@ -2,7 +2,6 @@
 import { MdOutlineMail, MdOutlineHome } from "react-icons/md";
 const UserComponent = ({ users }) => {
   const { picture, name, login, email, location } = users;
-  // console.log(users);
   return (
     <section className="rounded-md m-4 p-4 w-80 bg-white drop-shadow">
       <div className="flex my-2 py-2">
